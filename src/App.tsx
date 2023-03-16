@@ -1,5 +1,11 @@
+import Greet from "./Greet";
+
 function App() {
-    return <div className="App">Hello World</div>;
+    return (
+        <div className="App">
+            <Greet />
+        </div>
+    );
 }
 
 export default App;
