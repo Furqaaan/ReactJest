@@ -1,4 +1,4 @@
-import Greet from "./Greet";
+import Greet from "./components/Greet";
 
 function App() {
     return (

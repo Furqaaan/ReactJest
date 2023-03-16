@@ -12,7 +12,7 @@ interface GreetProps {
 
 const Greet: FC<GreetProps> = (props) => {
     const { name } = props;
-    return <div>Hello World {name}</div>;
+    return <div data-testid='custom-div'>Hello World {name}</div>;
 };
 
 export default Greet;
