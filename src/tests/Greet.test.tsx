@@ -33,6 +33,6 @@ describe("Greet", () => {
 
         await user.click(buttonElement);
 
-        expect(linkElement).toHaveTextContent("Clicked");
+        expect(linkElement).toHaveTextContent("Clickd");
     });
 });
