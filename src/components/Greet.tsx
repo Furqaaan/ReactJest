@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 /**
  * The Greet component props.
@@ -12,7 +12,18 @@ interface GreetProps {
 
 const Greet: FC<GreetProps> = (props) => {
     const { name } = props;
-    return <div data-testid='custom-div'>Hello World {name}</div>;
+    const [text,setText] = useState("Hello World " + name)
+
+    return (
+        <div
+            data-testid="custom-div"
+            style={{ background: "tomato", color: "white" }}
+        >
+            {text}
+            <button onClick={() => setText("Clicked")}>TEST</button>
+
+        </div>
+    );
 };
 
 export default Greet;
